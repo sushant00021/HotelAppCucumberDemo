@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 63.587 sec <<< FAILURE!
+Login Successful(HotelApp Login #1)  Time elapsed: 15.082 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Hello [vasuvespag]!> but was:<Hello [aryan1207]!>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepDefinition.Test_Steps.login_is_successful(Test_Steps.java:61)
+	at ✽.Login is Successful(file:///C:/Users/Administrator/java/HotelAppCucumberDemo/features/DataTableDemo.feature:11)
+
+Login Successful(HotelApp Login #3)  Time elapsed: 4.975 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'user enters username as "vasuvespag"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters username as {string}")
+public void user_enters_username_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters password as {string}")
+public void user_enters_password_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Login Successful #2(HotelApp Login #4)  Time elapsed: 8.87 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Hello [vasuvespag]!> but was:<Hello [aryan1207]!>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepDefinition.Test_Steps.login_is_successful(Test_Steps.java:61)
+	at ✽.Login is Successful(file:///C:/Users/Administrator/java/HotelAppCucumberDemo/features/OutlineDemo.feature:9)
+
